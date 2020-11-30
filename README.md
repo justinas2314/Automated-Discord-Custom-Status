@@ -12,7 +12,7 @@ There is an example `config.ini` file included.
 If you are going to run the .exe file move the config forder to the target (where the .exe file is) directory.  
 If you are going to run via `cargo run --release` you don't need to move the file.  
 The following arguments can be used:
-* `text` static string which will be used as a custom status
+* `text` static string which will be used as a custom status text
 * `emoji` static emoji which will be used as the custom status emoji
 * `regex` used with `format`  
 the regex to match the window's text and split it into groups. Example: `(.) and (.)` would match and group `one and two` as 
