@@ -31,7 +31,7 @@ You want to display a custom status when watching youtube that is only set when 
 1. Find a regex that matches the browser window with youtube and write it down  
 `".* YouTube .*"`  
 2. Set `emoji` and `text` to whatever you want (I'll leave `emoji` blank here)  
-`text = watching youtube`
+`text = watching youtube`  
 The entire script will look like  
 ```
 ".* YouTube .*"
@@ -48,7 +48,7 @@ This regex exludes windows like IntelliJ IDEA, Discord and Mozilla Firefox but m
 3. Set `format` to put together the final text  
 `format = listening to {2} by {1}`
 4. Set `emoji`  
-`emoji = 🎵`
+`emoji = 🎵`  
 The entire script will look like
 ```
 "^[^-]*? - (?!Mozilla)(?!IntelliJ)(?!Discord)[^-]*$"
