@@ -32,7 +32,7 @@ if `regex` and `format` don't match anything this will be the status instead
 # How to get your discord token?
 There are plenty of tutorials online for example [this](https://github.com/Tyrrrz/DiscordChatExporter/wiki/Obtaining-Token-and-Channel-IDs).  
 Here's a step by step guide (this is for Firefox but it's probably really similar on other browsers as well)  
-1. Open [discord][https://discord.com/app] on your browser  
+1. Open [discord](https://discord.com/app) on your browser  
 2. Press f12 to open developer tools and open `network` 
 3. Find a request with an `Authorization` field in `Request Headers` (if you don't find anything refresh). The `Authorization`value is the token you need to put in `token.txt`.  
 # Examples
