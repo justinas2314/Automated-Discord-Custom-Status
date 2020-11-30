@@ -12,8 +12,6 @@ struct StatusWrapper {
 }
 
 
-
-
 struct StatusJson {
     emoji_name: Option<String>,
     text: Option<String>
@@ -67,7 +65,6 @@ fn format(expression: &Regex, text: &str, format_str: &str) -> String {
 fn function(client: &mut Client, vector: (&str, &str),
             values: &Values,
             headers: &HeaderMap) {
-    // no i'm not yandere dev
     let mut text = match &values.text {
         Some(x) => Some(x.to_string()),
         None => None
@@ -151,9 +148,6 @@ fn too_long(text: &str) -> &str {
 pub fn main(client: &mut Client, commands: &HashMap<String, Values>,
             parsed_input: &Option<(String, String)>,
             headers: &HeaderMap) {
-    // the details and state values cannot be less than 4 or more than 29
-    // the image texts cannot be longer than 128
-    // all of these will change to "    " or "" to prevent crashes
     match parsed_input {
         Some((x, y)) => {
             match commands.get(x) {
