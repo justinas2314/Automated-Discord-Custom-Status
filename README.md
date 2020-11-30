@@ -41,7 +41,7 @@ text = watching youtube
 You want your custom status to have the name and artist of a song you're listening to on spotify
 ### Solution
 1. Find a regex that matches the spotify window and doesn't match other windows   
-`"^[^-]*? - (?!Mozilla)(?!IntelliJ)(?!Discord)[^-]*$"`
+`"^[^-]*? - (?!Mozilla)(?!IntelliJ)(?!Discord)[^-]*$"`  
 This regex exludes windows like IntelliJ IDEA, Discord and Mozilla Firefox but matches everything else in a format `text - more text`
 2. Set `regex` to group the important parts of the window's name  
 `regex = (.*) - (.*)`
