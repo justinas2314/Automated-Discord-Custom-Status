@@ -145,9 +145,6 @@ fn main() {
         } else {
             println!("no app detected");
         }
-        // &running_app.1 must be the first arg in parsed_input
-        // the var parsed_input is not the actual parsed input
-        // back in my day this used to work differently
         client::main(&mut client, &values,
                      &running_app,
                      &headers);
