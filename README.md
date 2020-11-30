@@ -37,7 +37,7 @@ Here's a step by step guide (this is for Firefox but it's probably really simila
 3. Find a request with an `Authorization` field in `Request Headers` (if you don't find anything refresh). The `Authorization`value is the token you need to put in `token.txt`.  
 # Examples
 ### Example Problem
-You want to display a custom status when watching youtube that is only set when watching youtube
+You want to display a custom status that is only set when watching youtube
 ### Solution
 1. Find a regex that matches the browser window with youtube and write it down  
 `".* YouTube .*"`  
