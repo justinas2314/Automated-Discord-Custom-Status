@@ -2,7 +2,7 @@
 This is really similar to [my other project](https://github.com/justinas2314/AutomatedDiscordRichPresence) 
 but the key difference is that instead of using the Rich Presence API this sets your custom status (and the way processes are found and matched is different).
 # Disclaimers
-Using this might be a violation of Discord TOS as this code uses your discord token to pretend to be a user and set .  
+Using this might be a **violation of Discord TOS** as this code uses your discord token to pretend to be the user and set the custom status.  
 I highly recommend looking through the code and making sure the script you give your discord token to (it's almost the same as giving away your password) does no harm.  
 I don't recommend looking through the code too much as most of it is recycled from my older project which literally has a disclaimer `So don't expect the code to make sense`.  
 This uses the windows API so it only works on windows.  
