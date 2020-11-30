@@ -14,7 +14,7 @@ If you are going to run via `cargo run --release` you don't need to move the fil
 The following arguments can be used:
 * `text` static string which will be used as a custom status text
 * `emoji` static emoji which will be used as the custom status emoji
-* `regex` used with `format`  
+* `regex` (used with `format`)  
 the regex to match the window's text and split it into groups. Example: `(.) and (.)` would match and group `one and two` as 
 ```
 {
@@ -24,11 +24,11 @@ the regex to match the window's text and split it into groups. Example: `(.) and
 }
 ```
 
-* `format` used with `regex`  
+* `format` (used with `regex`)  
 this is a string used to put the groups into one piece. Example: `{2} and {1}`. The number inside `{}` is the group's index (indexing starts from 1, 0 is the entire matched regex). If group 2 matched to `two` and group 1 matched to `one` the final string will be `two and one`.
-* `fallback` optionally used with `format` and `regex` if nothing is matched  
+* `fallback` (optionally used with `format` and `regex` if nothing is matched)  
 if `regex` and `format` don't match anything this will be the status instead
-* `fallback_emoji` used together with `fallback` as the emoji  
+* `fallback_emoji` optionally used together with `fallback` as the emoji  
 # How to get your discord token?
 There are plenty of tutorials online for example [this](https://github.com/Tyrrrz/DiscordChatExporter/wiki/Obtaining-Token-and-Channel-IDs).  
 Here's a step by step guide (this is for Firefox but it's probably really similar on other browsers)  
