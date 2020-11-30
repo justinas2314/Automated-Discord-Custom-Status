@@ -34,7 +34,7 @@ There are plenty of tutorials online for example [this](https://github.com/Tyrrr
 Here's a step by step guide (this is for Firefox but it's probably really similar on other browsers)  
 1. Open [discord](https://discord.com/app) on your browser  
 2. Press f12 to open developer tools and open `network` 
-3. Find a request with an `Authorization` field in `Request Headers` (if you don't find anything refresh). The `Authorization` value is the token you need to put in `token.txt`.  
+3. Find a request with an `Authorization` field in `Request headers` (if you don't find anything refresh). The `Authorization` value is the token you need to put in `token.txt`.  
 # Examples
 ### Example Problem
 You want to display a custom status that is only set when watching youtube
@@ -43,7 +43,7 @@ You want to display a custom status that is only set when watching youtube
 `".* YouTube .*"`  
 2. Set `emoji` and `text` to whatever you want (I'll leave `emoji` blank here)  
 `text = watching youtube`  
-The entire script will look like  
+###### The entire Script will look like
 ```
 ".* YouTube .*"
 text = watching youtube
@@ -60,7 +60,7 @@ This regex exludes windows like IntelliJ IDEA, Discord and Mozilla Firefox but m
 `format = listening to {2} by {1}`
 4. Set `emoji`  
 `emoji = 🎵`  
-The entire script will look like
+###### The entire Script will look like
 ```
 "^[^-]*? - (?!Mozilla)(?!IntelliJ)(?!Discord)[^-]*$"
 regex = (.*) - (.*)
