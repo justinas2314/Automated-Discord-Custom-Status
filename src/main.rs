@@ -119,21 +119,16 @@ fn main() {
     let mut headers = HeaderMap::new();
     headers.insert("Content-Type", HeaderValue::from_static("application/json"));
     headers.insert("Authorization", HeaderValue::from_str(&token).unwrap());
-    let mut previous_running_app: Option<String> = None;
     let mut running_app: Option<(String, String)> = None;
     loop {
         // updates every 5 seconds
         std::thread::sleep(std::time::Duration::from_secs(5));
         // get_apps::main has tons of unsafe calls
         if let Some(new_apps) = get_apps::main(&order) {
-            match (&previous_running_app, &running_app) {
-                (Some(x), _) if x == &new_apps.1 => {
+            match &running_app {
+                Some(x) if x.1 == new_apps.1 => {
                     continue;
                 },
-                (_, Some(_)) => {
-                    previous_running_app = Some(running_app.take().unwrap().1);
-                    running_app = Some(new_apps);
-                }
                 _ => {
                     running_app = Some(new_apps);
                 },
