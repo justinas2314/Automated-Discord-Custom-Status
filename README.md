@@ -1,6 +1,8 @@
 # Automated-Discord-Custom-Status
 This is really similar to [my other project](https://github.com/justinas2314/AutomatedDiscordRichPresence) 
 but the key difference is that instead of using the Rich Presence API this sets your custom status (and the way processes are found and matched is different).
+### Not Actively Maintained
+Though at a certain point this used to work, I have not updated it in 4 years while Discord have most likely changed their internal API.
 # Disclaimers
 Using this might be a **violation of Discord TOS** as this code uses your discord token to pretend to be the user and set the custom status.  
 I highly recommend looking through the code and making sure the script you give your discord token to (it's almost the same as giving away your password) does no harm.  
